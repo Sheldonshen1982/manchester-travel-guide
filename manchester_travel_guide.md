@@ -33,8 +33,8 @@
 | 日期 | 主题 | 核心安排 | 住宿 |
 |------|------|----------|------|
 | **Day 1** 10/2（周四） | 抵达 & 初印象 | 阿尔伯特广场 → 中央图书馆 → 大教堂 → Northern Quarter | Kimpton Clocktower |
-| **Day 2** 10/3（周五） | 工业革命 & 大学 | 科学工业博物馆 → 恩格斯雕像 → John Rylands Library → 曼大 → Castlefield | Kimpton Clocktower |
-| **Day 3** 10/4（周六） | 足球朝圣 | Old Trafford 球场导览 → People's History Museum → Chetham's Library | Kimpton Clocktower |
+| **Day 2** 10/3（周五） | 工业革命 & 大学 | 🏛️ 科学工业博物馆 → Castlefield → John Rylands Library → 曼大 | Kimpton Clocktower |
+| **Day 3** 10/4（周六） | 足球朝圣 | 🏟️ Old Trafford → Chetham's Library（最北端）→ People's History Museum（沿河向南） | Kimpton Clocktower |
 | **Day 4** 10/5（周日） | 利物浦一日游 | 披头士故事馆 → 默西河渡轮 → 草莓园 → 便士巷 → Cavern Club | Kimpton Clocktower |
 | **Day 5** 10/6（周一） | 峰区 & 达西庄园 | 🚗 租车自驾 → Bamford → Chatsworth House 达西庄园 | Kimpton Clocktower |
 | **Day 6** 10/7（周二） | 返程 | 曼城 ✈️ 上海 | — |
@@ -50,12 +50,13 @@
 | 01:50 | ✈️ 起飞 | HO1661 上海浦东→曼彻斯特 |
 | 06:50 | 🛬 抵达 | 曼彻斯特机场 MAN T2，过海关、取行李 |
 | 08:00 | 🚆 机场→市中心 | 火车（TransPennine Express）到 Manchester Piccadilly，约 20 分钟，人均 ¥30 |
-| 09:30 | 🏛️ 阿尔伯特广场 | 曼彻斯特地标，市政厅哥特式建筑（外观拍照） |
-| 10:30 | 📚 中央图书馆 | 免费参观，圆形阅览室 |
-| 11:30 | ⛪ 曼彻斯特大教堂 | 千年历史，安静休憩（免费，30 分钟） |
-| 12:30 | 🍽️ 午餐 | Mackie Mayor 美食市场（多档口选择，£8-15/人） |
-| 14:00 | 🏨 入住 | Kimpton Clocktower Hotel（15:00 check-in，可提前寄存） |
-| 16:00 | 🚶 Northern Quarter | 涂鸦街道、独立小店、复古唱片店（Afflecks Palace） |
+| 08:30 | 🏨 酒店寄存行李 | Kimpton Clocktower Hotel（Piccadilly 步行 5 分钟） |
+| 09:00 | 🏛️ 阿尔伯特广场 | 曼彻斯特地标，市政厅哥特式建筑（外观拍照） |
+| 09:45 | 📚 中央图书馆 | 免费参观，圆形阅览室（阿尔伯特广场旁） |
+| 10:45 | ⛪ 曼彻斯特大教堂 | 千年历史，安静休憩（免费，30 分钟） |
+| 11:30 | 🍽️ 午餐 | Mackie Mayor 美食市场（多档口选择，£8-15/人） |
+| 13:00 | 🚶 Northern Quarter | 涂鸦街道、独立小店、复古唱片店（Afflecks Palace） |
+| 15:00 | 🏨 入住 | Kimpton Clocktower Hotel（步行 10 分钟回酒店） |
 | 18:30 | 🍽️ 晚餐 | The Refuge（酒店内）或 Rudy's 披萨（那不勒斯披萨 £8-12） |
 | 20:00 | 🌙 休息 | 倒时差，早点休息 |
 
@@ -90,6 +91,8 @@
 📞 +44 161 288 1111  
 ⏰ Check-in 15:00 / Check-out 11:00
 
+**💡 路线提示**：Piccadilly 站 → 酒店（5分钟放行李）→ 阿尔伯特广场（5分钟）→ 中央图书馆（隔壁）→ 大教堂（5分钟）→ Mackie Mayor（5分钟）→ Northern Quarter（5分钟），全程步行，不走回头路，下午回酒店办入住刚好。
+
 **🌧️ 雨天备选**：Manchester Art Gallery（室内，免费）/ Afflecks Palace（室内市集）
 
 ---
@@ -99,12 +102,12 @@
 | 时间 | 安排 | 详情 |
 |------|------|------|
 | 09:30 | 🏛️ Science and Industry Museum | 科学工业博物馆（免费，2.5-3h） |
-| 12:00 | 🗽 恩格斯雕像 | Byrom Street 恩格斯铜像（顺路，5分钟） |
-| 12:30 | 🍽️ 午餐 | 博物馆内 Café 或 附近门店 |
-| 14:00 | 🏛️ John Rylands Library | 约翰·瑞兰斯图书馆（免费，1h） |
-| 15:30 | 🎓 曼彻斯特大学 | 校园漫步（免费，1h） |
-| 16:30 | 🚶 Castlefield | 古罗马城墙遗址 + 运河漫步（1h） |
-| 17:30 | 🏠 返回酒店 | 休息 |
+| 12:00 | 🗽 恩格斯雕像 | Byrom Street 恩格斯铜像（5分钟） |
+| 12:15 | 🌿 Castlefield | 运河漫步 + 罗马遗址（1h，紧挨博物馆） |
+| 13:15 | 🍽️ 午餐 | Castlefield 运河边餐厅或博物馆 Café |
+| 14:30 | 🏛️ John Rylands Library | 约翰·瑞兰斯图书馆（免费，1h） |
+| 15:45 | 🎓 曼彻斯特大学 | 校园漫步（免费，1h） |
+| 17:00 | 🏠 返回酒店 | 休息（大学步行 10 分钟到酒店） |
 | 18:30 | 🍽️ 晚餐 | El Gato Negro（Tapas £15-25/人）或 Akbar's（印度菜 £12-20/人） |
 | 20:00 | 🎭 可选 | Palace Theatre 看演出 / Deansgate 散步 |
 
@@ -142,6 +145,8 @@
 
 **🌧️ 雨天备选**：Science and Industry Museum（本身就是室内）/ People's History Museum
 
+**💡 路线提示**：酒店 → Science and Industry Museum（步行20分钟/打车5分钟），博物馆→恩格斯雕像（5分钟）→ Castlefield（5分钟，同一区域），Castlefield → John Rylands（步行10分钟），John Rylands → 曼大（沿 Oxford Road 步行15分钟），曼大→酒店（步行10分钟）。一路向南，不走回头路。
+
 ---
 
 ### Day 3｜10月4日（周六）—— 足球朝圣 & 马克思恩格斯历史
@@ -150,10 +155,10 @@
 |------|------|------|
 | 09:00 | 🚆 酒店→老特拉福德 | 打车/公交前往（约 15-20 分钟） |
 | 09:30 | 🏟️ Old Trafford Tour | 老特拉福德球场导览 + 博物馆（1.5-2h） |
-| 12:00 | 🍽️ 午餐 | 球场附近 或 返回市中心 |
-| 13:30 | 🏛️ People's History Museum | 人民历史博物馆（免费，1.5h） |
-| 15:30 | 🏛️ Chetham's Library | 切塔姆图书馆导览（需预约，1h） |
-| 17:00 | 🏠 返回酒店 | 休息 |
+| 12:00 | 🍽️ 午餐 | 球场附近 或 打车回市中心吃 |
+| 13:00 | 🏛️ Chetham's Library | 切塔姆图书馆导览（需预约，1h，市中心最北端开始） |
+| 14:30 | 🏛️ People's History Museum | 人民历史博物馆（免费，1.5h，沿河向南步行10分钟） |
+| 16:30 | 🏠 返回酒店 | 穿过市中心步行回酒店（约 15 分钟） |
 | 18:30 | 🍽️ 晚餐 | The French（The Lowry）或 Chaophraya（泰式海鲜） |
 | 20:00 | 🌙 自由活动 | Deansgate 散步 / 休息 |
 
@@ -168,13 +173,6 @@
 🔗 [manutd.com](https://www.manutd.com/en/club/visit-old-trafford/museum-stadium-tours)
 💡 曼联主场，世界最著名的足球场之一，可容纳 74,310 人。导览路线：博物馆（1999 三冠王展厅、慕尼黑空难纪念墙、巴斯比宝贝故事）→ 球员通道（触摸通道墙壁感受赛前氛围）→ 替补席（坐在弗格森坐过的位置）→ 球场边（感受草坪的震撼）→ 奖杯展厅（英超、欧冠、足总杯奖杯复制品）→ 球迷商店。博物馆用全息投影、互动屏幕、历史影像讲述曼联从 1878 年（牛顿希斯）到现在的传奇。即使不是球迷，也会被"慕尼黑空难"和"诺坎普奇迹"的故事打动。建议预留 2 小时。
 
-**People's History Museum**
-📍 Left Bank, M3 3ER
-⏰ 10:00-17:00
-🎫 免费
-🔗 [phm.org.uk](https://phm.org.uk)
-💡 英国唯一致力于讲述民主、工人运动、社会变革的国家博物馆。核心展品包括：1819 年"彼得卢大屠杀"的旗帜、宪章运动的请愿书（600 万人签名）、工会运动的徽章和海报、妇女选举权运动的宣传品、反种族隔离运动的标语。博物馆用实物、影像、互动装置讲述"普通人如何改变世界"——从 19 世纪工厂工人的抗争到 21 世纪的平等运动。这里也是理解马克思主义如何在英国工人阶级中传播的最佳场所。
-
 **Chetham's Library（马克思恩格斯研读地）**
 📍 Long Millgate, M3 1SB
 ⏰ 需预约导览（建议提前 1-2 周）
@@ -186,7 +184,16 @@
 - **2026 年起，儿童须年满 8 岁**方可参加
 - 建议提前 1-2 周官网预约
 
+**People's History Museum**
+📍 Left Bank, M3 3ER
+⏰ 10:00-17:00
+🎫 免费
+🔗 [phm.org.uk](https://phm.org.uk)
+💡 英国唯一致力于讲述民主、工人运动、社会变革的国家博物馆。核心展品包括：1819 年"彼得卢大屠杀"的旗帜、宪章运动的请愿书（600 万人签名）、工会运动的徽章和海报、妇女选举权运动的宣传品、反种族隔离运动的标语。博物馆用实物、影像、互动装置讲述"普通人如何改变世界"——从 19 世纪工厂工人的抗争到 21 世纪的平等运动。这里也是理解马克思主义如何在英国工人阶级中传播的最佳场所。
+
 **🌧️ 雨天备选**：所有景点均为室内，全天可雨天游览
+
+**💡 路线提示**：酒店 → Old Trafford（打车往西南方向），Old Trafford → Chetham's Library（打车回市中心最北端），Chetham's → People's History Museum（沿河向南步行10分钟），博物馆→酒店（穿过市中心向南步行15分钟）。从北往南一条直线下山。
 
 ---
 
