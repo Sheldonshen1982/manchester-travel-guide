@@ -3,27 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>曼彻斯特 × 都柏林 行程地图</title>
-<meta name="description" content="曼城 Day1-2 与 都柏林 Day4-5 行程交互地图">
+<title>曼彻斯特 × 都柏林 行程</title>
+<meta name="description" content="曼城 Day1-2 与 都柏林 Day4-5 行程交互地图 + 完整攻略">
 <style>
   :root {
     --bg:#f5f5f7; --text:#1d1d1f; --secondary:#86868b;
-    --green:#34c759; --red:#ff3b30; --orange:#ff9500; --pink:#ff2d55;
-    --shadow:0 4px 14px rgba(0,0,0,.08); --radius:16px;
+    --green:#34c759; --red:#ff3b30; --orange:#ff9500; --pink:#ff2d55; --blue:#0071e3;
+    --shadow:0 4px 14px rgba(0,0,0,.08); --radius:16px; --line:rgba(60,60,67,.12);
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.5;letter-spacing:-0.02em}
+  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.5;letter-spacing:-0.02em}
   .wrap{max-width:680px;margin:0 auto;padding:32px 20px}
   .hero{text-align:center;padding:24px 16px 28px}
   .hero h1{font-size:28px;font-weight:700;letter-spacing:-.025em}
   .hero p{font-size:16px;color:var(--secondary);margin-top:8px}
+  .section-head{font-size:13px;font-weight:600;color:var(--secondary);text-transform:uppercase;letter-spacing:.04em;padding:6px 0 12px;margin-top:10px}
   .cards{display:flex;flex-direction:column;gap:16px}
   .card{background:#fff;border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow);cursor:pointer;text-decoration:none;color:var(--text);transition:transform .15s,box-shadow .2s;display:block}
   .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
   .card .tag{display:inline-block;font-size:12px;font-weight:700;color:#fff;padding:3px 10px;border-radius:6px;margin-bottom:10px}
-  .card h2{font-size:20px;font-weight:700;margin-bottom:6px}
+  .card h2{font-size:19px;font-weight:700;margin-bottom:6px}
   .card .desc{font-size:14px;color:var(--secondary);margin-bottom:10px}
-  .card .lines{display:flex;gap:14px;font-size:12px;color:var(--secondary)}
+  .card .lines{display:flex;gap:14px;font-size:12px;color:var(--secondary);flex-wrap:wrap}
   .line{display:inline-flex;align-items:center;gap:6px}
   .swatch{width:16px;height:4px;border-radius:2px;display:inline-block}
   .foot{text-align:center;color:var(--secondary);font-size:12px;padding:24px 0}
@@ -33,8 +34,10 @@
 <div class="wrap">
   <div class="hero">
     <h1>🗺️ 曼彻斯特 × 都柏林</h1>
-    <p>行程交互地图 · 点击地图点可查看景点详情</p>
+    <p>行程交互地图 · 完整攻略</p>
   </div>
+
+  <div class="section-head">🗺️ 交互地图</div>
   <div class="cards">
     <a class="card" href="maps/manchester_day1-day2_map.html">
       <span class="tag" style="background:#ff9500">🏴 英国</span>
@@ -56,6 +59,21 @@
       </div>
     </a>
   </div>
+
+  <div class="section-head">📚 旅行指南</div>
+  <div class="cards">
+    <a class="card" href="guides/manchester-dublin-travel-guide.html">
+      <span class="tag" style="background:var(--blue)">📖 整合版</span>
+      <h2>曼彻斯特 × 都柏林 · 6天5晚行程</h2>
+      <div class="desc">双城完整行程 · 航班 · 住宿 · 预算 · 逐日详解</div>
+    </a>
+    <a class="card" href="guides/manchester-travel-guide.html">
+      <span class="tag" style="background:var(--blue)">📖 曼城专篇</span>
+      <h2>曼彻斯特详细攻略</h2>
+      <div class="desc">曼城景点逐项详解 · 交通Tips · 实用信息</div>
+    </a>
+  </div>
+
   <div class="foot">Clawra 生成 · 曼彻斯特×都柏林 6天行程</div>
 </div>
 </body>
