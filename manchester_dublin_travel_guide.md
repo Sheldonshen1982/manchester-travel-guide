@@ -21,8 +21,8 @@
 
 | 日期 | 星期 | 主题 | 核心安排 | 住宿 |
 |------|------|------|----------|------|
-| **Day1** 10/2 | 周五 | 抵达 & 曼城初印象 | 阿尔伯特广场 → 中央图书馆 → 大教堂 → Northern Quarter | Kimpton Clocktower |
-| **Day2** 10/3 | 周六 | 工业革命 & 大学 | 科学工业博物馆 → Castlefield → John Rylands → 曼大 → 老特拉福德 | Kimpton Clocktower |
+| **Day1** 10/2 | 周五 | 市中心北→南 | 大教堂 → Northern Quarter → 阿尔伯特广场 → 中央图书馆 → 曼大（延长） | Kimpton Clocktower |
+| **Day2** 10/3 | 周六 | 西南片区一日 | 老特拉福德 → 科学工业博物馆 → Castlefield/恩格斯 → John Rylands | Kimpton Clocktower |
 | **Day3** 10/4 | 周日 | 峰区 & 达西庄园 | 🚗 机场取车 → Bamford → Chatsworth House → 机场还车 → ✈️FR1557 去都柏林 | 都柏林市区 |
 | **Day4** 10/5 | 周一 | 都柏林文化一日 | 圣三一学院 → 凯尔经 → 都柏林城堡 → 圣帕特里克大教堂 → Temple Bar → 利菲河夜景 | 都柏林市区 |
 | **Day5** 10/6 | 周二 | 都柏林经典 & 返曼城 | 凤凰公园 → 威灵顿纪念碑 → 健力士展览馆 → Ha'penny Bridge → Grafton Street → Molly Malone → ✈️FR556 回曼城 | 曼城机场酒店 |
@@ -67,13 +67,14 @@
 | 06:50 | 🛬 抵达 | 曼彻斯特机场 MAN，过海关、取行李 |
 | 08:00 | 🚆 机场→市中心 | 火车（TransPennine Express）到 Manchester Piccadilly，约 20 分钟 |
 | 08:30 | 🏨 酒店寄存行李 | Kimpton Clocktower Hotel（Piccadilly 步行 5 分钟） |
-| 09:00 | 🏛️ 阿尔伯特广场 | 地标，市政厅哥特式建筑（外观拍照） |
-| 09:45 | 📚 中央图书馆 | 免费，圆形阅览室（阿尔伯特广场旁） |
-| 10:45 | ⛪ 曼彻斯特大教堂 | 千年历史，免费，30分钟 |
-| 11:30 | 🍽️ 午餐 | Mackie Mayor 美食市场（多档口，£8-15/人） |
-| 13:00 | 🚶 Northern Quarter | 涂鸦街道、独立小店、复古唱片店（Afflecks Palace，3h 悠闲逛） |
-| 16:00 | 🎨 机动自由安排 | 可选：Manchester Art Gallery（免费）/ Castlefield 遗址散步 / 中国城逛逛 |
-| 18:30 | 🍽️ 晚餐 | The Refuge（酒店旁）或 Rudy's 披萨 / Northern Quarter 精酿酒吧 |
+| 09:00 | ⛪ 曼彻斯特大教堂 | 北区出发（免费，40分钟） |
+| 09:50 | 🚶 Northern Quarter | 独立小店、涂鸦墙、Afflecks Palace（顺路往南） |
+| 11:30 | 🍽️ 午餐 | Mackie Mayor 美食市场（北角内） |
+| 13:00 | 🏛️ 阿尔伯特广场 | 市政厅哥特式建筑（外观拍照，20分钟） |
+| 13:30 | 📚 中央图书馆 | 圆形阅览室（阿尔伯特广场旁，40分钟） |
+| 14:30 | 🎓 曼彻斯特大学（延长） | Oxford Road 南行，红砖建筑群+校园漫步（1.5h，时间充裕） |
+| 16:30 | 🎨 机动自由安排 | 可选：Manchester Art Gallery（免费）/ 回市中心逛街 |
+| 18:30 | 🍽️ 晚餐 | The Refuge（酒店旁）或 Rudy's 披萨 / 精酿酒吧 |
 | 20:30 | 🏨 回酒店办入住 | Kimpton Clocktower Hotel（晚餐后回去，Check-in 后休息） |
 | 22:00 | 🌙 休息 | 倒时差，早点休息 |
 
@@ -96,28 +97,32 @@
 📍 市中心北部 Oldham Street / Thomas Street 为核心 ｜ 🎫 免费
 曼城文艺心脏，全是独立店无连锁。Afflecks Palace 五层室内市集（80+摊位），Stevenson Street 涂鸦墙是打卡点。
 
+**曼彻斯特大学（The University of Manchester）— 延长参观**
+📍 Oxford Road, M13 9PL ｜ 🎫 免费（校园开放）
+红砖大学（Red Brick University）代表，25位诺奖得主（卢瑟福、石墨烯团队等）。核心是哥特式 Whitworth Hall 和 Oxford Road 沿线的红砖建筑群。**Day1 下午安排 1.5h 校园漫步**（从中央图书馆沿 Oxford Road 南行顺路），可参观曼彻斯特博物馆（免费，古埃及藏品）或 Whitworth 美术馆，时间充裕可深入逛逛。
+
 **🏨 Kimpton Clocktower Hotel**
 📍 Oxford Street, Manchester M60 7HA ｜ 📞 +44 161 288 1111
 ⏰ Check-in 15:00 / Check-out 11:00
 
-**💡 路线**：Piccadilly → 酒店（5分钟放行李）→ 阿尔伯特广场（5分钟）→ 中央图书馆（隔壁）→ 大教堂（5分钟）→ Mackie Mayor（5分钟）→ Northern Quarter（5分钟），全程步行。
+**💡 路线**：Piccadilly → 酒店（5分钟寄存行李）→ **曼彻斯特大教堂（北区）→ Northern Quarter（顺路往南）→ Mackie Mayor午餐 → 阿尔伯特广场 → 中央图书馆 → 曼彻斯特大学（继续南行，延长参观）**，全程从北往南单向推进，不走回头路；看完大学沿 Oxford Road 或步行 10 分钟回酒店，顺路当晚入住。
 **🌧️ 雨天备选**：Manchester Art Gallery / Afflecks Palace（室内）。
 
 ---
 
 ### Day 2｜10月3日（周六）—— 工业革命 & 曼城全览（含老特拉福德）
 
-> 考虑到 Day3 要早起自驾去峰区，Day2 尽量把曼城核心景点看完，晚间早休息。
+> 考虑到 Day3 要早起自驾去峰区，Day2 专注曼城西南片区（老特拉福德+科学工业+Castlefield），顺路向东回市中心，晚间早休息。曼彻斯特大学已并入 Day1 延长参观。
 
 | 时间 | 安排 | 详情 |
 |------|------|------|
 | 09:00 | 🏟️ Old Trafford Tour | 老特拉福德球场导览+博物馆（强烈推荐，2h 内） |
-| 12:00 | 🍽️ 午餐 | 球场附近或回市中心 |
-| 14:00 | 🏛️ Science and Industry Museum | 科学工业博物馆（免费，2.5h） |
-| — | 🗽 恩格斯雕像 | Byrom Street 铜像（5分钟）（可选） |
-| — | 🌿 Castlefield | 运河漫步+罗马遗址（1h）（可选） |
-| 16:30 | 🏛️ John Rylands Library | 约翰·瑞兰斯图书馆（免费，1h） |
-| 17:45 | 🎓 曼彻斯特大学 | 校园快闪（30分钟，方便就逛） |
+| 11:30 | 🥪 午餐 | 老特拉福德附近或公交站旁快餐 |
+| 13:00 | 🏛️ Science and Industry Museum | 科学工业博物馆（免费，2.5h，西南片区） |
+| — | 🗽 恩格斯雕像 | Byrom Street 铜像（5分钟，博物馆旁） |
+| — | 🌿 Castlefield | 运河漫步+罗马遗址（1h，博物馆对面，可灵活） |
+| 16:30 | 🏛️ John Rylands Library | 约翰·瑞兰斯图书馆（免费，1h，向东回市中心） |
+| 17:45 | 🏠 回酒店 | 中心区散步回酒店（或 Deansgate 逛） |
 | 18:30 | 🍽️ 晚餐 | El Gato Negro（Tapas）或 Akbar's（印度菜） |
 | 20:00 | 🌙 早休息 | 为 Day3 早起自驾做准备 |
 
@@ -145,12 +150,8 @@
 📍 Byrom Street / First Street 交叉口 ｜ 🎫 免费
 2017年揭幕的恩格斯青铜立像。他在此研究写下《英国工人阶级状况》。
 
-**曼彻斯特大学（可选快闪）**
-📍 Oxford Road M13 9PL ｜ 🎫 免费
-红砖大学代表，25位诺奖得主（卢瑟福、石墨烯团队等）。核心 Whitworth Hall 哥特式建筑。
-
-**💡 说明**：Day2 若时间紧张，优先级 **老特拉福德 > 科学工业博物馆 > John Rylands**；恩格斯雕像/Castlefield/曼大可灵活取舍或并入 Day1 机动时间。
-**🌧️ 雨天备选**：全程室内（老特拉福德、博物馆、John Rylands）。
+**💡 说明**：Day2 专注曼城**西南片区**，从老特拉福德 → 科学工业博物馆 → Castlefield/恩格斯雕像（同片区，步行可达）→ 向东 John Rylands 回市中心，**单向推进不走回头路**。曼彻斯特大学已并入 Day1 延长参观。
+**🌧️ 雨天备选**：全程室内（老特拉福德、科学工业博物馆、John Rylands）；Castlefield 为露天，雨天可跳过。
 
 ---
 
