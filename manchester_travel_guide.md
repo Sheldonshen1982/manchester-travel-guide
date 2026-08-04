@@ -33,8 +33,8 @@
 | 日期 | 主题 | 核心安排 | 住宿 |
 |------|------|----------|------|
 | **Day 1** 10/2（周五） | 抵达 & 初印象 | 阿尔伯特广场 → 中央图书馆 → 大教堂 → Northern Quarter | Kimpton Clocktower |
-| **Day 2** 10/3（周六） | 工业革命 & 大学 | 🏛️ 科学工业博物馆 → Castlefield → John Rylands Library → 曼大 | Kimpton Clocktower |
-| **Day 3** 10/4（周日） | 足球朝圣 | 🏟️ Old Trafford → Chetham's Library（最北端）→ People's History Museum（沿河向南） | Kimpton Clocktower |
+| **Day 2** 10/3（周六） | 工业革命 & 恩格斯 | 🏛️ 科学工业博物馆 → 🗽 恩格斯雕像 → John Rylands Library → 曼大（路过） | Kimpton Clocktower |
+| **Day 3** 10/4（周日） | 足球朝圣 & 马克思 | 🏟️ Old Trafford → Chetham's Library（必须去）→ People's History Museum（沿河向南） | Kimpton Clocktower |
 | **Day 4** 10/5（周一） | 利物浦一日游 | 披头士故事馆 → 默西河渡轮 → 草莓园 → 便士巷 → Cavern Club | Kimpton Clocktower |
 | **Day 5** 10/6（周二） | 峰区 & 达西庄园 | 🚗 租车自驾 → Bamford → Chatsworth House 达西庄园 | Kimpton Clocktower |
 | **Day 6** 10/7（周三） | 返程 | 曼城 ✈️ 上海 | — |
@@ -102,12 +102,11 @@
 | 时间 | 安排 | 详情 |
 |------|------|------|
 | 09:30 | 🏛️ Science and Industry Museum | 科学工业博物馆（免费，2.5-3h） |
-| 12:00 | 🗽 恩格斯雕像 | Byrom Street 恩格斯铜像（5分钟） |
-| 12:15 | 🌿 Castlefield | 运河漫步 + 罗马遗址（1h，紧挨博物馆） |
-| 13:15 | 🍽️ 午餐 | Castlefield 运河边餐厅或博物馆 Café |
+| 12:15 | 🗽 恩格斯雕像 | Byrom Street 恩格斯铜像（5分钟，必须去） |
+| 13:00 | 🍽️ 午餐 | 博物馆 Café 或 Deansgate 周边餐厅 |
 | 14:30 | 🏛️ John Rylands Library | 约翰·瑞兰斯图书馆（免费，1h） |
-| 15:45 | 🎓 曼彻斯特大学 | 校园漫步（免费，1h） |
-| 17:00 | 🏠 返回酒店 | 休息（大学步行 10 分钟到酒店） |
+| 16:00 | 🎓 曼彻斯特大学（路过） | Oxford Road 红砖建筑群拍照打卡（约20分钟，不深入） |
+| 16:30 | 🏠 返回酒店 | 休息（大学步行 10 分钟到酒店） |
 | 18:30 | 🍽️ 晚餐 | El Gato Negro（Tapas £15-25/人）或 Akbar's（印度菜 £12-20/人） |
 | 20:00 | 🎭 可选 | Palace Theatre 看演出 / Deansgate 散步 |
 
@@ -133,19 +132,16 @@
 🎫 免费
 💡 由恩里奎塔·奥古斯丁·瑞兰斯夫人于 1900 年建造，纪念其丈夫、纺织大亨约翰·瑞兰斯。建筑由建筑师 Basil Champneys 设计，是新哥特式建筑的巅峰之作——外观如大教堂般庄严，内部阅览室有彩色玻璃窗、大理石雕像、深色木雕书架。收藏超过 25 万件古籍手稿，包括现存最古老的《约翰福音》碎片（Papyrus Rylands，约公元 125 年）、1477 年卡克斯顿印刷的《坎特伯雷故事集》、中世纪泥金装饰手抄本。阅览室氛围肃穆而神圣，仿佛穿越回中世纪修道院。
 
-**曼彻斯特大学（The University of Manchester）**
+**曼彻斯特大学（The University of Manchester）— 路过打卡**
 📍 Oxford Road, M13 9PL
 🎫 免费（校园开放）
-💡 红砖大学（Red Brick University）的代表，由欧文斯学院（1851 年）和曼彻斯特理工大学（1956 年）于 2004 年合并。校友和教职员中包括 25 位诺贝尔奖得主——卢瑟福（原子分裂）、布拉格（X 射线晶体学）、安德烈·海姆和康斯坦丁·诺沃肖洛夫（石墨烯）。核心建筑是哥特式风格的 Whitworth Hall 和 Oxford Road 沿线的红砖建筑群。校园内还有曼彻斯特博物馆（免费，古埃及藏品）和 Whitworth 美术馆。适合带孩子感受学术氛围。
-
-**Castlefield（城堡遗址公园）**
-📍 Castlefield, M3 4FP（博物馆对面）
-🎫 免费
-💡 曼彻斯特的发源地。公元 79 年罗马人在此建立 Mamucium 城堡（"Mam"=乳房，指城堡所在的小山丘），控制通往约克和切斯特的罗马大道。如今可见重建的罗马城墙城门和城堡地基。18 世纪布里奇沃特运河（英国第一条工业运河）开通后，Castlefield 成为工业运输枢纽，运河两岸仓库林立。现在这里是城市绿洲——运河边散步、看船闸运转、在露天酒吧小憩。连接博物馆和 Castlefield 的行人桥上有展板讲述运河历史。
+💡 红砖大学（Red Brick University）的代表，由欧文斯学院（1851 年）和曼彻斯特理工大学（1956 年）于 2004 年合并。校友和教职员中包括 25 位诺贝尔奖得主——卢瑟福（原子分裂）、布拉格（X 射线晶体学）、安德烈·海姆和康斯坦丁·诺沃肖洛夫（石墨烯）。核心建筑是哥特式风格的 Whitworth Hall 和 Oxford Road 沿线的红砖建筑群。**本次仅在 Oxford Road 上路过，拍照打卡核心红砖建筑即可，不深入校园**（约 20 分钟）。
 
 **🌧️ 雨天备选**：Science and Industry Museum（本身就是室内）/ People's History Museum
 
-**💡 路线提示**：酒店 → Science and Industry Museum（步行20分钟/打车5分钟），博物馆→恩格斯雕像（5分钟）→ Castlefield（5分钟，同一区域），Castlefield → John Rylands（步行10分钟），John Rylands → 曼大（沿 Oxford Road 步行15分钟），曼大→酒店（步行10分钟）。一路向南，不走回头路。
+**💡 路线提示**：酒店 → Science and Industry Museum（步行20分钟/打车5分钟），博物馆→恩格斯雕像（5分钟，同一区域）→ John Rylands（步行10分钟），John Rylands → 曼大（沿 Oxford Road 步行15分钟，路过打卡），曼大→酒店（步行10分钟）。一路向南，不走回头路。
+
+**（可选取舍）**：若时间宽裕想放松，可加 Castlefield 运河漫步（位于博物馆旁，步行可达）；本行程默认跳过，优先保证 John Rylands 与曼大路过。
 
 ---
 
@@ -156,7 +152,7 @@
 | 09:00 | 🚆 酒店→老特拉福德 | 打车/公交前往（约 15-20 分钟） |
 | 09:30 | 🏟️ Old Trafford Tour | 老特拉福德球场导览 + 博物馆（1.5-2h） |
 | 12:00 | 🍽️ 午餐 | 球场附近 或 打车回市中心吃 |
-| 13:00 | 🏛️ Chetham's Library | 切塔姆图书馆导览（需预约，1h，市中心最北端开始） |
+| 13:00 | 🏛️ Chetham's Library | 切塔姆图书馆导览（必须去，需预约，1h，市中心最北端开始） |
 | 14:30 | 🏛️ People's History Museum | 人民历史博物馆（免费，1.5h，沿河向南步行10分钟） |
 | 16:30 | 🏠 返回酒店 | 穿过市中心步行回酒店（约 15 分钟） |
 | 18:30 | 🍽️ 晚餐 | The French（The Lowry）或 Chaophraya（泰式海鲜） |
@@ -173,7 +169,7 @@
 🔗 [manutd.com](https://www.manutd.com/en/club/visit-old-trafford/museum-stadium-tours)
 💡 曼联主场，世界最著名的足球场之一，可容纳 74,310 人。导览路线：博物馆（1999 三冠王展厅、慕尼黑空难纪念墙、巴斯比宝贝故事）→ 球员通道（触摸通道墙壁感受赛前氛围）→ 替补席（坐在弗格森坐过的位置）→ 球场边（感受草坪的震撼）→ 奖杯展厅（英超、欧冠、足总杯奖杯复制品）→ 球迷商店。博物馆用全息投影、互动屏幕、历史影像讲述曼联从 1878 年（牛顿希斯）到现在的传奇。即使不是球迷，也会被"慕尼黑空难"和"诺坎普奇迹"的故事打动。建议预留 2 小时。
 
-**Chetham's Library（马克思恩格斯研读地）**
+**Chetham's Library（马克思恩格斯研读地）— 必须去**
 📍 Long Millgate, M3 1SB
 ⏰ 需预约导览（建议提前 1-2 周）
 🎫 免费（建议捐款）
