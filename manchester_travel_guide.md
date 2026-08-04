@@ -55,10 +55,11 @@
 | 09:45 | 📚 中央图书馆 | 免费参观，圆形阅览室（阿尔伯特广场旁） |
 | 10:45 | ⛪ 曼彻斯特大教堂 | 千年历史，安静休憩（免费，30 分钟） |
 | 11:30 | 🍽️ 午餐 | Mackie Mayor 美食市场（多档口选择，£8-15/人） |
-| 13:00 | 🚶 Northern Quarter | 涂鸦街道、独立小店、复古唱片店（Afflecks Palace） |
-| 15:00 | 🏨 入住 | Kimpton Clocktower Hotel（步行 10 分钟回酒店） |
-| 18:30 | 🍽️ 晚餐 | The Refuge（酒店内）或 Rudy's 披萨（那不勒斯披萨 £8-12） |
-| 20:00 | 🌙 休息 | 倒时差，早点休息 |
+| 13:00 | 🚶 Northern Quarter | 涂鸦街道、独立小店、复古唱片店（Afflecks Palace，3h 悠闲逛） |
+| 16:00 | 🎨 机动自由安排 | 可选：Manchester Art Gallery（免费）/ Castlefield 遗址散步 / 中国城逛逛 |
+| 18:30 | 🍽️ 晚餐 | The Refuge（酒店旁）或 Rudy's 披萨 / Northern Quarter 精酿酒吧 |
+| 20:30 | 🏨 回酒店办入住 | Kimpton Clocktower Hotel（晚餐后回去，Check-in 后休息） |
+| 22:00 | 🌙 休息 | 倒时差，早点休息 |
 
 ---
 
@@ -91,7 +92,7 @@
 📞 +44 161 288 1111  
 ⏰ Check-in 15:00 / Check-out 11:00
 
-**💡 路线提示**：Piccadilly 站 → 酒店（5分钟放行李）→ 阿尔伯特广场（5分钟）→ 中央图书馆（隔壁）→ 大教堂（5分钟）→ Mackie Mayor（5分钟）→ Northern Quarter（5分钟），全程步行，不走回头路，下午回酒店办入住刚好。
+**💡 路线提示**：Piccadilly 站 → 酒店（5分钟，先寄存行李）→ 阿尔伯特广场（5分钟）→ 中央图书馆（隔壁）→ 大教堂（5分钟）→ Mackie Mayor（5分钟）→ Northern Quarter（5分钟），全程步行。**下午行程宽松**，在北角悠闲逛到傍晚，晚餐后（约 20:30）再回酒店办入住即可，Check-in 时间（15:00 起）早于入住无碍，酒店可寄存行李到晚间。
 
 **🌧️ 雨天备选**：Manchester Art Gallery（室内，免费）/ Afflecks Palace（室内市集）
 
