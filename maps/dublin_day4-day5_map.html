@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>都柏林 Day4 &amp; Day5 行程地图</title>
+<meta name="description" content="都柏林市区 Day4（橙线）与 Day5（粉线）行程景点地图">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+:root {
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f5f5f7;
+  --bg-tertiary:   #fbfbfd;
+  --bg-elevated:   #ffffff;
+  --text-primary:   #1d1d1f;
+  --text-secondary: #86868b;
+  --accent:        #0071e3;
+  --tint-red:    #ff3b30;
+  --tint-orange: #ff9500;
+  --tint-green:  #34c759;
+  --tint-blue:   #007aff;
+  --tint-pink:   #ff2d55;
+  --separator:  rgba(60, 60, 67, .12);
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:  0 4px 14px rgba(0,0,0,.08);
+  --shadow-lg:  0 8px 30px rgba(0,0,0,.12);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif; background: var(--bg-secondary); color: var(--text-primary); -webkit-font-smoothing: antialiased; line-height: 1.47059; letter-spacing: -0.022em; }
+
+#map { width: 100%; height: 100vh; min-height: 560px; }
+
+.pt-label {
+  font-size: 12px; font-weight: 600; color: #fff;
+  padding: 3px 8px; border-radius: 6px; white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  letter-spacing: -0.01em; transform: translateY(-6px);
+  -webkit-text-size-adjust: 100%;
+}
+
+.legend-overlay {
+  position: fixed; top: 12px; left: 12px; z-index: 1000;
+  background: rgba(255,255,255,.92); backdrop-filter: blur(10px);
+  border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow-md);
+  font-size: 12px; line-height: 2; color: var(--text-primary);
+}
+.legend-overlay .lg-title { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+.legend-overlay .lg-item { display: flex; align-items: center; gap: 8px; }
+.legend-line { width: 22px; height: 4px; border-radius: 2px; display: inline-block; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+.hint { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); z-index: 1000; background: rgba(0,0,0,.7); color: #fff; font-size: 12px; padding: 8px 16px; border-radius: 20px; box-shadow: var(--shadow-md); white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+<div class="legend-overlay">
+  <div class="lg-title">🗺️ 都柏林市区行程</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#ff9500"></span> Day4 10/5（橙线）</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#ff2d55"></span> Day5 10/6（粉线）</div>
+</div>
+<div class="hint">👆 点击地图上的点查看详情 · 滚动缩放</div>
+
+<script>
+const DAY4_COLOR = '#ff9500';
+const DAY5_COLOR = '#ff2d55';
+
+const DAYS = [
+  {
+    id: 4, label: 'Day4', date: '10月5日 周一', color: DAY4_COLOR,
+    locations: [
+      { name: '圣三一学院', lat: 53.34371, lng: -6.25443, time: '09:30', type: 'spot', desc: '爱尔兰最古老大学（1592年）' },
+      { name: '凯尔经·老图书馆', lat: 53.34368, lng: -6.25500, time: '10:45', type: 'spot', desc: '《凯尔经》+ 长厅 Long Room' },
+      { name: '都柏林城堡', lat: 53.34266, lng: -6.26700, time: '14:00', type: 'spot', desc: '13世纪英王统治中心，国家厅室' },
+      { name: '圣帕特里克大教堂', lat: 53.33920, lng: -6.27100, time: '15:30', type: 'spot', desc: '爱尔兰最大教堂' },
+      { name: '圣殿酒吧区 Temple Bar', lat: 53.34550, lng: -6.26311, time: '16:45', type: 'spot', desc: '鹅卵石街道、现场音乐' },
+      { name: '利菲河夜景', lat: 53.34690, lng: -6.26140, time: '18:00', type: 'spot', desc: '河畔灯光、哈彭尼桥夜景' },
+    ]
+  },
+  {
+    id: 5, label: 'Day5', date: '10月6日 周二', color: DAY5_COLOR,
+    locations: [
+      { name: '凤凰公园', lat: 53.35894, lng: -6.33071, time: '09:00', type: 'spot', desc: '欧洲最大城市公园之一，野鹿群' },
+      { name: '威灵顿纪念碑', lat: 53.34905, lng: -6.30312, time: '10:30', type: 'spot', desc: '欧洲最高方尖碑之一' },
+      { name: '健力士啤酒展览馆', lat: 53.34193, lng: -6.28673, time: '11:30', type: 'spot', desc: '顶层 Gravity Bar 全景吧台' },
+      { name: "Ha'penny Bridge 哈彭尼桥", lat: 53.34633, lng: -6.26309, time: '15:00', type: 'spot', desc: '都柏林最经典地标步行桥' },
+      { name: 'Grafton Street 格拉夫顿街', lat: 53.34067, lng: -6.26077, time: '15:30', type: 'spot', desc: '购物街+街头艺人' },
+      { name: 'Molly Malone 雕像', lat: 53.34375, lng: -6.26090, time: '—', type: 'spot', desc: '卖鱼姑娘雕像地标' },
+    ]
+  }
+];
+
+const map = L.map('map', { center: [53.345, -6.27], zoom: 13, zoomControl: true, attributionControl: true });
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(map);
+
+function namedIcon(color, emoji, name) {
+  const label = name.replace(/（.*?）/g,'');
+  return L.divIcon({
+    className: '',
+    html: `<div style="display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-100%);">
+             <div class="pt-label" style="background:${color}">${emoji} ${label}</div>
+             <div style="width:15px;height:15px;border-radius:50%;background:${color};border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.25);margin-top:4px;transform:translateY(0)"></div>
+           </div>`,
+    iconSize: [0,0], iconAnchor: [0,0]
+  });
+}
+
+function drawDay(day) {
+  const coords = [];
+  day.locations.forEach(l => {
+    if (!l.lat) return;
+    const emoji = '📍';
+    const mk = L.marker([l.lat, l.lng], {
+      icon: namedIcon(day.color, emoji, l.name)
+    }).addTo(map);
+    mk.bindPopup(`<b>${l.name}</b>${l.time!=='—'?'<br><span style="color:#86868b">'+l.time+'</span>':''}<br>${l.desc}`);
+    if (l.time !== '—') coords.push([l.lat, l.lng]);
+  });
+  if (coords.length > 1) {
+    L.polyline(coords, { color: day.color, weight: 3, opacity: 0.7, dashArray: '7,6' }).addTo(map);
+  }
+}
+
+DAYS.forEach(d => drawDay(d));
+
+const all = [];
+DAYS.forEach(d => d.locations.forEach(l => { if(l.lat) all.push([l.lat,l.lng]); }));
+if (all.length) map.fitBounds(all, { padding: [80, 80], maxZoom: 14 });
+</script>
+</body>
+</html>

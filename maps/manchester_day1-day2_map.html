@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>曼彻斯特 Day1 &amp; Day2 行程地图</title>
+<meta name="description" content="曼彻斯特市区 Day1（绿线）与 Day2（红线）行程景点地图">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+:root {
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f5f5f7;
+  --bg-tertiary:   #fbfbfd;
+  --bg-grouped:    #f2f2f7;
+  --bg-elevated:   #ffffff;
+  --text-primary:   #1d1d1f;
+  --text-secondary: #86868b;
+  --text-tertiary:  #aeaeb2;
+  --accent:        #0071e3;
+  --accent-hover:  #0077ed;
+  --tint-red:    #ff3b30;
+  --tint-orange: #ff9500;
+  --tint-green:  #34c759;
+  --tint-blue:   #007aff;
+  --separator:  rgba(60, 60, 67, .12);
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:  0 4px 14px rgba(0,0,0,.08);
+  --shadow-lg:  0 8px 30px rgba(0,0,0,.12);
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  20px;
+  --safe-top:    env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif; background: var(--bg-secondary); color: var(--text-primary); -webkit-font-smoothing: antialiased; line-height: 1.47059; letter-spacing: -0.022em; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+#map { width: 100%; height: 90vh; min-height: 560px; }
+#map .leaflet-label-labels { display: none; }
+
+/* 景点名称标签 */
+.pt-label {
+  font-size: 12px; font-weight: 600; color: #fff;
+  padding: 3px 8px; border-radius: 6px; white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  letter-spacing: -0.01em; transform: translateY(-6px);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 顶部图例覆盖层 */
+.legend-overlay {
+  position: fixed; top: 12px; left: 12px; z-index: 1000;
+  background: rgba(255,255,255,.92); backdrop-filter: blur(10px);
+  border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow-md);
+  font-size: 12px; line-height: 2; color: var(--text-primary);
+}
+.legend-overlay .lg-title { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+.legend-overlay .lg-item { display: flex; align-items: center; gap: 8px; }
+.legend-line { width: 22px; height: 4px; border-radius: 2px; display: inline-block; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+.hint { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); z-index: 1000; background: rgba(0,0,0,.7); color: #fff; font-size: 12px; padding: 8px 16px; border-radius: 20px; box-shadow: var(--shadow-md); white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+<div class="legend-overlay">
+  <div class="lg-title">🗺️ 曼彻斯特市区行程</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#34c759"></span> Day1 10/2（绿线）</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#ff3b30"></span> Day2 10/3（红线）</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#ff9500"></span> 酒店</div>
+</div>
+<div class="hint">👆 点击地图上的点查看详情 · 滚动缩放</div>
+
+<script>
+const HOTEL = { name: 'Kimpton Clocktower Hotel', lat: 53.47433, lng: -2.24031 };
+
+const DAY1_COLOR = '#34c759';
+const DAY2_COLOR = '#ff3b30';
+
+const DAYS = [
+  {
+    id: 1, label: 'Day1', date: '10月2日 周五', color: DAY1_COLOR,
+    locations: [
+      { name: '曼彻斯特大教堂', lat: 53.48523, lng: -2.24440, time: '09:00', type: 'spot', desc: '哥特式大教堂，木雕唱诗班座位' },
+      { name: "Chetham's Library（马克思恩格斯研读地）", lat: 53.48661, lng: -2.24427, time: '09:50', type: 'spot', desc: '最古老公共图书馆，需预约（儿童须满8岁）' },
+      { name: '北角 Northern Quarter', lat: 53.48354, lng: -2.23511, time: '10:40', type: 'spot', desc: '独立小店、涂鸦墙、Afflecks Palace' },
+      { name: 'Mackie Mayor（午餐）', lat: 53.48549, lng: -2.23486, time: '11:30', type: 'food', desc: '美食市场午餐' },
+      { name: '阿尔伯特广场', lat: 53.47951, lng: -2.24493, time: '13:00', type: 'spot', desc: '市政厅哥特式建筑群' },
+      { name: '中央图书馆', lat: 53.47813, lng: -2.24471, time: '13:30', type: 'spot', desc: '圆形阅览室，宛如魔法图书馆' },
+      { name: '曼彻斯特大学', lat: 53.46602, lng: -2.23309, time: '14:30', type: 'spot', desc: '红砖大学，25位诺奖得主' },
+    ]
+  },
+  {
+    id: 2, label: 'Day2', date: '10月3日 周六', color: DAY2_COLOR,
+    locations: [
+      { name: '老特拉福德球场', lat: 53.46311, lng: -2.29139, time: '09:00', type: 'spot', desc: '曼联主场导览+博物馆' },
+      { name: '科学工业博物馆', lat: 53.47726, lng: -2.25470, time: '13:00', type: 'spot', desc: '世界最古老客运火车站遗址' },
+      { name: 'Castlefield', lat: 53.47582, lng: -2.25570, time: '14:30', type: 'spot', desc: '运河漫步+罗马遗址' },
+      { name: '恩格斯雕像', lat: 53.47828, lng: -2.25198, time: '15:15', type: 'spot', desc: 'Byrom Street 铜像' },
+      { name: 'John Rylands 图书馆', lat: 53.48042, lng: -2.24914, time: '16:30', type: 'spot', desc: '新哥特式巅峰之作' },
+    ]
+  }
+];
+
+const map = L.map('map', { center: [53.478, -2.250], zoom: 14, zoomControl: true, attributionControl: true });
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(map);
+
+/* 酒店 marker（橙色，带名称） */
+L.marker([HOTEL.lat, HOTEL.lng], {
+  icon: L.divIcon({ className: '', html: '<div style="width:14px;height:14px;border-radius:50%;background:#ff9500;border:2.5px solid #fff;box-shadow:0 0 6px rgba(255,149,0,.6)"></div>', iconSize: [14,14], iconAnchor: [7,7] }),
+  zIndexOffset: 1000
+}).addTo(map).bindPopup('<b>🏨 ' + HOTEL.name + '</b><br><span style="color:#86868b">住宿（10/2、10/3）</span>')
+ .openTooltip();
+
+/* 名称标签 marker 图标 */
+function namedIcon(color, emoji, name, short) {
+  const label = short || name.replace(/（.*?）/g,'');
+  return L.divIcon({
+    className: '',
+    html: `<div style="display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-100%);">
+             <div class="pt-label" style="background:${color}">${emoji} ${label}</div>
+             <div style="width:16px;height:16px;border-radius:50%;background:${color};border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.25);margin-top:4px;transform:translateY(0)"></div>
+           </div>`,
+    iconSize: [0,0], iconAnchor: [0,0]
+  });
+}
+
+/* 逐日画点+连线 */
+const polylines = [];
+
+function drawDay(day) {
+  const coords = [];
+  day.locations.forEach(l => {
+    if (!l.lat) return;
+    const short = day.id===1 && l.name.includes('Chetham') ? "Chetham's Library" : undefined;
+    const emoji = l.type==='food' ? '🍽️' : '📍';
+    const mk = L.marker([l.lat, l.lng], {
+      icon: namedIcon(day.color, emoji, l.name, short)
+    }).addTo(map);
+    mk.bindPopup(`<b>${l.name}</b>${l.time!=='—'?'<br><span style="color:#86868b">'+l.time+'</span>':''}<br>${l.desc}`);
+    if (l.time !== '—') coords.push([l.lat, l.lng]);
+  });
+  if (coords.length > 1) {
+    const pl = L.polyline(coords, { color: day.color, weight: 3, opacity: 0.7, dashArray: '7,6' }).addTo(map);
+    polylines.push(pl);
+  }
+}
+
+// 两条线都画上（Day1绿 + Day2红）
+DAYS.forEach(d => drawDay(d));
+
+// 视角：框住所有点
+const all = [];
+DAYS.forEach(d => d.locations.forEach(l => { if(l.lat) all.push([l.lat,l.lng]); }));
+if (all.length) map.fitBounds(all, { padding: [70, 70], maxZoom: 15 });
+</script>
+</body>
+</html>
