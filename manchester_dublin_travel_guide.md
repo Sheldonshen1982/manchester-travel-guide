@@ -71,10 +71,11 @@
 | 09:45 | 📚 中央图书馆 | 免费，圆形阅览室（阿尔伯特广场旁） |
 | 10:45 | ⛪ 曼彻斯特大教堂 | 千年历史，免费，30分钟 |
 | 11:30 | 🍽️ 午餐 | Mackie Mayor 美食市场（多档口，£8-15/人） |
-| 13:00 | 🚶 Northern Quarter | 涂鸦街道、独立小店、复古唱片店（Afflecks Palace） |
-| 15:00 | 🏨 入住 | Kimpton Clocktower Hotel |
-| 18:30 | 🍽️ 晚餐 | The Refuge（酒店内）或 Rudy's 披萨 |
-| 20:00 | 🌙 休息 | 倒时差，早点休息 |
+| 13:00 | 🚶 Northern Quarter | 涂鸦街道、独立小店、复古唱片店（Afflecks Palace，3h 悠闲逛） |
+| 16:00 | 🎨 机动自由安排 | 可选：Manchester Art Gallery（免费）/ Castlefield 遗址散步 / 中国城逛逛 |
+| 18:30 | 🍽️ 晚餐 | The Refuge（酒店旁）或 Rudy's 披萨 / Northern Quarter 精酿酒吧 |
+| 20:30 | 🏨 回酒店办入住 | Kimpton Clocktower Hotel（晚餐后回去，Check-in 后休息） |
+| 22:00 | 🌙 休息 | 倒时差，早点休息 |
 
 #### 🏛️ Day1 景点详情
 
