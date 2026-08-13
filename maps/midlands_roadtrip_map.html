@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>曼彻斯特→中部环线 6天5晚 自驾总图</title>
+<meta name="description" content="曼彻斯特➜达西庄园➜伯明翰➜莎士比亚故居➜华威城堡➜科茨沃尔德➜曼彻斯特 环线自驾地图">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; background: #f5f5f7; color: #1d1d1f; -webkit-font-smoothing: antialiased; }
+#map { width: 100%; height: 92vh; min-height: 560px; }
+
+.pt-label {
+  font-size: 12px; font-weight: 600; color: #fff;
+  padding: 3px 8px; border-radius: 6px; white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25); transform: translateY(-6px);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 顶部图例 */
+.legend-overlay {
+  position: fixed; top: 12px; left: 12px; z-index: 1000;
+  background: rgba(255,255,255,.92); backdrop-filter: blur(10px);
+  border-radius: 12px; padding: 12px 14px; box-shadow: 0 8px 30px rgba(0,0,0,.12);
+  font-size: 12px; line-height: 2; color: #1d1d1f; max-width: 220px;
+}
+.legend-overlay .lg-title { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+.legend-overlay .lg-item { display: flex; align-items: center; gap: 8px; }
+.legend-line { width: 22px; height: 4px; border-radius: 2px; display: inline-block; flex-shrink: 0; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+
+.hint { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); z-index: 1000; background: rgba(0,0,0,.7); color: #fff; font-size: 12px; padding: 8px 16px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,.12); white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+<div class="legend-overlay">
+  <div class="lg-title">🗺️ 6天5晚 中部环线自驾</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#34c759"></span> Day3 曼城→达西→伯明翰</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#007aff"></span> Day4 伯明翰→莎翁故居</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#ff3b30"></span> Day5 回程环线(不走回头路)</div>
+  <div class="lg-item"><span class="legend-dot" style="background:#ff9500"></span> 🏨 住宿</div>
+</div>
+<div class="hint">👆 点击标记看详情 · 滚动缩放 · Day1/2 市区景点已并入</div>
+
+<script>
+/* ===== 曼城市区(并入Day1/2) ===== */
+const MANCHESTER_CITY = {
+  day1: [
+    { name: '曼彻斯特大教堂', lat: 53.48523, lng: -2.24440, desc: '千年哥特式教堂，木雕唱诗班座位' },
+    { name: '北角 Northern Quarter', lat: 53.48354, lng: -2.23511, desc: '独立小店、涂鸦墙、Afflecks Palace' },
+    { name: '阿尔伯特广场', lat: 53.47951, lng: -2.24493, desc: '市政厅哥特式建筑群' },
+    { name: '中央图书馆', lat: 53.47813, lng: -2.24471, desc: '圆形阅览室，宛如魔法图书馆' },
+  ],
+  day2: [
+    { name: '老特拉福德球场', lat: 53.46311, lng: -2.29139, desc: '曼联主场导览' },
+    { name: '科学工业博物馆', lat: 53.47726, lng: -2.25470, desc: '世界最古老客运火车站遗址' },
+    { name: '恩格斯雕像', lat: 53.47828, lng: -2.25198, desc: 'Byrom Street 铜像' },
+    { name: 'John Rylands 图书馆', lat: 53.48042, lng: -2.24914, desc: '新哥特式巅峰之作' },
+  ]
+};
+
+/* ===== 主环线各站 ===== */
+const HOTELS = [
+  { name: 'Kimpton Clocktower（曼城市区）', lat: 53.47833, lng: -2.24031, days: '10/2-10/3' },
+  { name: '伯明翰市中心酒店', lat: 52.4862, lng: -1.8904, days: '10/4' },
+  { name: '斯特拉特福小镇酒店', lat: 52.1917, lng: -1.7073, days: '10/5' },
+  { name: '曼城机场酒店', lat: 53.3537, lng: -2.2750, days: '10/6' },
+];
+
+/* 每天路线（按顺序，含跨城自驾路径点，让线路走向更真实） */
+const ROUTES = [
+  {
+    label: 'Day3', color: '#34c759',
+    path: [
+      { name: '曼城市区出发', lat: 53.4808, lng: -2.2426, type: 'day-start' },
+      { name: '达西庄园 Chatsworth', lat: 53.2277, lng: -1.6110, spot: true, desc: '《傲慢与偏见》取景地，3-4h，庄园+花园+农场' },
+      { lat: 52.90, lng: -1.70, type: 'mid' },   // M1南下中继
+      { name: '伯明翰 Birmingham', lat: 52.4862, lng: -1.8904, type: 'day-end', desc: 'Bullring购物中心、维多利亚广场、唐人街' },
+    ]
+  },
+  {
+    label: 'Day4', color: '#007aff',
+    path: [
+      { name: '伯明翰出发', lat: 52.4862, lng: -1.8904, type: 'day-start' },
+      { name: '莎士比亚出生地', lat: 52.1940, lng: -1.7060, spot: true, desc: '莎翁出生都铎式木屋' },
+      { name: '安妮·海瑟薇小屋', lat: 52.1930, lng: -1.7370, spot: true, desc: '莎翁妻子童年农舍（茅草屋）' },
+      { name: '雅芳河畔 Stratford', lat: 52.1917, lng: -1.7073, type: 'day-end', desc: '皇家莎士比亚剧院、天鹅、河畔散步' },
+    ]
+  },
+  {
+    label: 'Day5（回程不走回头路）', color: '#ff3b30',
+    path: [
+      { name: '斯特拉特福出发', lat: 52.1917, lng: -1.7073, type: 'day-start' },
+      { name: '华威城堡 Warwick Castle', lat: 52.2796, lng: -1.5833, spot: true, desc: '千年中世纪城堡，鹰隼表演、地牢' },
+      { name: 'Broadway（科茨沃尔德）', lat: 52.0360, lng: -1.8638, spot: true, desc: '科茨沃尔德门户村，鹅卵石主街' },
+      { name: 'Bourton-on-the-Water', lat: 51.8855, lng: -1.7543, spot: true, desc: '"小威尼斯"，河边小镇，迷你村庄模型' },
+      { lat: 52.40, lng: -1.95, type: 'mid' },   // M6北返中继
+      { name: '曼城机场还车', lat: 53.3537, lng: -2.2750, type: 'day-end', desc: '同店还车免异地费' },
+    ]
+  }
+];
+
+const map = L.map('map', { center: [52.25, -1.85], zoom: 8, zoomControl: true, attributionControl: true });
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(map);
+
+/* 名称标签 + 圆点 */
+function namedIcon(color, emoji, name, short) {
+  const label = short || String(name).replace(/（.*?）/g,'').slice(0,12);
+  return L.divIcon({
+    className: '',
+    html: `<div style="display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-100%);">
+             <div class="pt-label" style="background:${color}">${emoji} ${label}</div>
+             <div style="width:15px;height:15px;border-radius:50%;background:${color};border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.25);margin-top:4px"></div>
+           </div>`,
+    iconSize: [0,0], iconAnchor: [0,0]
+  });
+}
+
+/* ===== 曼城市区景点（蓝灰点，Day1/2）===== */
+const CITY_COLORS = { day1: '#34c759', day2: '#007aff' };
+Object.entries(MANCHESTER_CITY).forEach(([key, arr]) => {
+  arr.forEach(s => {
+    const c = CITY_COLORS[key];
+    L.marker([s.lat, s.lng], { icon: namedIcon(c, '📍', s.name) }).addTo(map)
+      .bindPopup(`<b>${s.name}</b><br><span style="color:#86868b">曼城市区</span><br>${s.desc}`);
+  });
+});
+
+/* ===== 环线每天 ===== */
+ROUTES.forEach(r => {
+  const coords = [];
+  r.path.forEach((p, i) => {
+    if (p.lat) coords.push([p.lat, p.lng]);
+    if (p.spot) {
+      L.marker([p.lat, p.lng], { icon: namedIcon(r.color, '📍', p.name) }).addTo(map)
+        .bindPopup(`<b>${p.name}</b><br><span style="color:#86868b">${r.label}</span><br>${p.desc||''}`);
+    }
+  });
+  if (coords.length > 1) {
+    L.polyline(coords, { color: r.color, weight: 4, opacity: 0.65, dashArray: '8,7' }).addTo(map);
+  }
+});
+
+/* ===== 住宿 ===== */
+HOTELS.forEach(h => {
+  L.marker([h.lat, h.lng], {
+    icon: L.divIcon({ className: '', html: '<div style="width:16px;height:16px;border-radius:50%;background:#ff9500;border:3px solid #fff;box-shadow:0 0 8px rgba(255,149,0,.6)"></div>', iconSize: [16,16], iconAnchor: [8,8] }),
+    zIndexOffset: 1000
+  }).addTo(map).bindPopup(`<b>🏨 ${h.name}</b><br><span style="color:#86868b">住宿 ${h.days}</span>`);
+});
+
+/* ===== 视野框住所有标记 ===== */
+const all = [];
+MANCHESTER_CITY.day1.forEach(s=>all.push([s.lat,s.lng]));
+MANCHESTER_CITY.day2.forEach(s=>all.push([s.lat,s.lng]));
+HOTELS.forEach(h=>all.push([h.lat,h.lng]));
+ROUTES.forEach(r=>r.path.forEach(p=>{ if(p.lat) all.push([p.lat,p.lng]); }));
+map.fitBounds(all, { padding: [60, 60], maxZoom: 8 });
+</script>
+</body>
+</html>
